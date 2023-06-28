@@ -1,0 +1,50 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(228, 242, 245);
+
+}
+.album{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  margin: 5px;
+  width: 500px;
+  height: 250px;
+  background-color: whitesmoke;
+  border-radius: 16px;
+  box-shadow: 10px 10px 5px -6px;
+  
+}
+.album .like-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+}
+.album .like-button.liked {
+  color: red;
+}
+
+img{
+  width: 250px;
+  height: 250px;
+  border-radius: 15px 0px 0px  15px;  
+}
+
+.album__text {
+  padding: 0px;
+}
+.genero {
+padding: 5px;
+width: 59px;
+height: 24px;
+background-color: rgb(222, 128, 223);
+border-radius: 16px;
+align-content: center;
+}
