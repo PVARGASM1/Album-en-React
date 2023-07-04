@@ -128,23 +128,23 @@ const ComponentAlbum = () => {
         
     return(
         <div className='container'>
-            {songs.map((song) => (
+          {songs.map((song) => (
            <main className='album' key={song.id}>
-            <div className='album__img'>
-                <img src={song.cover_url} alt="imagen del album" />
+                <div className='album__img'>
+                  <img src={song.cover_url} alt="imagen del album" />
                 </div>
             <div className='album__text'>
-                <h3>{song.artist}</h3>
-                <h6>{song.album}</h6>
-                <h3>{song.name}</h3>
-                <p>{song.year}</p>
-                <h5><div className='genero'>{song.genre}</div></h5>
-                <button
+                    <h3>{song.artist}</h3>
+                    <h6>{song.album}</h6>
+                    <h3>{song.name}</h3>
+                    <p>{song.year}</p>
+                    <h5><div className='genero'>{song.genre}</div></h5>
+                  <button
                     className={`like-button ${song.like ? 'liked' : ''}`}
                     onClick={() => toggleLike(song.id)}
-                >
-                {song.like ? <i className="fas fa-heart"></i> : <i className="far fa-heart"></i>}
-            </button>
+                  >
+                  {song.like ? <i className="fas fa-heart"></i> : <i className="far fa-heart"></i>}
+                  </button>
             </div>
            </main>))}
         </div>

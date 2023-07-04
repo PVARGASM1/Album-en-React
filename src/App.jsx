@@ -5,11 +5,9 @@ import ComponentAlbum from '../components/ComponentAlbum'
 function App() {
 
   return (
-    <>
       <div>
         <ComponentAlbum/>
       </div>
-    </>
   )
 }
 
